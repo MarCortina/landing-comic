@@ -1,0 +1,331 @@
+/* body tiene reglas generales de color de background, fuente y color de fuente */
+body {
+    background-color: black;
+    color: white;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+/* tag a quitamos color azul del vinculo */
+a {
+    color: inherit;
+    text-decoration: none;
+    word-spacing: normal;
+    margin-right: 10px;
+}
+
+/* definimos tamaño de la imagen del header */
+header img {
+    width: 100%;
+}
+
+/* definimos la img de background del footer */
+footer {
+    background-image: url("/img/2.jpg");
+    background-repeat: no-repeat;
+}
+
+/* formulario separacion entre input */
+input {
+    margin-bottom: 5px;
+}
+
+/* definimos ancho gral  */
+.container {
+    width: 100%;
+}
+
+/* definimos color de background de la navbar */
+.bkg-nav {
+    background-color: white;
+    width: 100%;
+}
+
+/* color de bkg de contacto */
+.contacto {
+    background-color: rgb(34, 50, 71);
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* color de bkg link de navegacion */
+.navegacion {
+    background-color: rgb(34, 50, 71);
+    display: flex;
+    justify-content: center;
+}
+
+/* ubicacion del titulo sobre img en el header */
+.titulo {
+    z-index: 2;
+    position: absolute;
+    display: flex;
+    justify-content: flex-end;
+    right: 16px;
+    width: 30%;
+    bottom: 1%;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+/* bkg color de fuente ancho y centrado de las tarjetas  */
+.cards {
+    background-color: white;
+    color: black;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/* color tamaño y alineacion del titulo de las tarjetas */
+.cards h3 {
+    background-color: red;
+    width: 60%;
+    color: white;
+    text-align: center;
+}
+
+/* ancho y alto de las img de las tarjetas */
+.cards img {
+    width: 35%;
+    height: 50%;
+}
+
+/* ancho y alto del texto de las tarjetas */
+.card p {
+    width: 75%;
+    height: 20%;
+}
+
+/* posicionamiento de las tarjetas gral */
+.card {
+    width: 100%;
+    margin-left: 5%;
+}
+
+/* centrado del contenido del footer en ambos ejes */
+.pie-pagina {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* posicionamiento de texto en footer */
+.pie-texto {
+    width: 25%;
+    margin-left: -35%;
+}
+
+/* posicionamiento de formulario */
+.formulario {
+    width: 25%;
+    display: flex;
+    justify-content: center;
+}
+
+
+/* posicionamiento y tamaño de deadpool */
+.dead-pool {
+    position: absolute;
+    width: 10%;
+    height: 25%;
+    z-index: 2;
+    display: flex;
+    justify-content: flex-end;
+    top: 1350px;
+    right: 19px;
+}
+
+/* tarjetas que aparecen solo en mobile */
+.cards-responsive {
+    display: none;
+}
+
+/* posicionamiento componente Our Store */
+.our-store {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    color: black;
+    margin-top: 15px;
+}
+
+/* posicionamiento img Our Store */
+.our-store img {
+    margin-right: 20%;
+}
+
+/* media querys para vista intermedia */
+@media(min-width: 375px) and (max-width: 768px) {
+    .titulo {
+        bottom: 55%;
+        font-size: 0.50em;
+
+    }
+
+    .our-store {
+        height: 250px;
+    }
+
+    .our-text {
+        width: 250px;
+    }
+
+    .our-store img {
+        margin-right: 2%;
+    }
+
+    .our-title {
+        text-align: center;
+    }
+
+    .our-p {
+        display: flex;
+        align-items: center;
+        height: 120px;
+    }
+
+    .cards img {
+        width: 30%;
+        height: 40%;
+        margin-top: 8%;
+        margin-left: 30px;
+    }
+
+    .card {
+        font-size: 0.75em;
+        justify-content: center;
+    }
+
+    .dead-pool {
+        top: 1000px;
+        width: 110px;
+        height: 150px;
+
+    }
+
+}
+
+/* media query para vista mobile */
+@media(min-width: 0px) and (max-width:375px) {
+
+    body {
+        background-color: white;
+    }
+
+    .dead-pool {
+        top: 232%;
+        width: 15%;
+        height: 10%;
+        right: 2%;
+    }
+
+    footer {
+        background-image: url("/img/2.jpg");
+        background-repeat: no-repeat;
+        width: 375px;
+        height: 200px;
+        background-size: cover;
+        margin-top: 100%;
+    }
+
+    .titulo {
+        display: none;
+    }
+
+    .cards-responsive {
+        display: block;
+        height: 100px;
+    }
+
+    .card-r img {
+        width: 50px;
+        height: 80px;
+    }
+
+    .card-r {
+        width: 375px;
+        height: 200px;
+        background-color: red;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        margin-top: 8px;
+        margin-bottom: 5px;
+    }
+
+    .titulo-card-r {
+        text-align: center;
+    }
+
+    .titulo-card-r,
+    h3,
+    p {
+        width: 80%;
+        margin-left: 5%;
+    }
+
+    .ocultar {
+        display: none;
+    }
+
+    .cards img {
+        width: 80%;
+        height: 30%;
+        margin-left: 8%;
+        margin-top: 15%;
+    }
+
+    .cards,
+    h3,
+    p {
+        font-size: 0.90em;
+        margin-bottom: 5%;
+    }
+
+    .pie-pagina {
+        font-size: 0.65em;
+        display: flex;
+        justify-content: center;
+        height: 100%;
+        display: inline-block;
+    }
+
+    .pie-texto {
+        height: 100%;
+        width: 90%;
+        margin-left: 5%;
+        margin-bottom: -80%;
+    }
+
+    .formulario {
+        height: 50%;
+        margin-top: 50%;
+        width: 100%;
+    }
+
+    .card p {
+        height: 40%;
+    }
+
+    .cards h3 {
+        width: 90%;
+    }
+
+    .cards {
+        margin-bottom: -10%;
+    }
+
+    .our-store img {
+        width: 50%;
+        height: 50%;
+        margin-right: -10%;
+        margin-left: 10%;
+        margin-top: 7%;
+    }
+
+    .our-store {
+        display: flex;
+        flex-direction: row-reverse;
+
+    }
+}
